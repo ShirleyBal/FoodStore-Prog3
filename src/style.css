@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #2b2b2b;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* HEADER */
+
+.topbar {
+  background-color: #ff6347;
+  color: white;
+  padding: 1rem 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.topnav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.topnav a {
+  color: white;
+  font-weight: 500;
+}
+
+.topnav a:hover {
+  text-decoration: underline;
+}
+
+/* BADGE DEL CARRITO */
+
+.badge {
+  display: inline-block;
+  min-width: 1.4rem;
+
+  padding: 0.1rem 0.4rem;
+  margin-left: 0.2rem;
+
+  border-radius: 999px;
+
+  background-color: white;
+  color: #ff6347;
+
+  font-size: 0.8rem;
+  font-weight: bold;
+
+  text-align: center;
+}
+
+/* INPUTS GENERALES */
+
+input,
+select,
+button {
+  font-size: 1rem;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #2b2b2b;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* ACCESIBILIDAD */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/* BOTONES en el general, correccion del carrito */
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+
+  border: 2px solid #ff6347;
+  border-radius: 8px;
+
+  background-color: #ff6347;
+  color: white;
+
+  font-weight: 600;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn:hover {
+  background-color: #e5502f;
+  border-color: #e5502f;
+}
+
+.btn-ghost {
+  background-color: transparent;
+  color: #ff6347;
+}
+
+.btn-ghost:hover {
+  background-color: #ff6347;
+  color: white;
+}

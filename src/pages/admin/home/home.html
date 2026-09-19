@@ -2,6 +2,54 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Store | Catálogo</title>
+    <link rel="stylesheet" href="../client.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="./home.html">Food Store</a>
+      <nav class="topnav" aria-label="Principal">
+        <a href="./home.html" aria-current="page">Catálogo</a>
+        <a href="../cart/cart.html">
+          Carrito
+          <span id="cartCount" class="badge" title="Unidades en el carrito">0</span>
+        </a>
+      </nav>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" aria-label="Categorías">
+        <h2>Categorías</h2>
+        <ul id="categorias" class="cat-list"></ul>
+      </aside>
+
+      <main>
+        <div class="toolbar">
+          <label class="search">
+            <span class="sr-only">Buscar productos por nombre</span>
+            <input
+              id="busqueda"
+              type="search"
+              placeholder="Buscar por nombre, por ejemplo: pizza"
+              autocomplete="off"
+            />
+          </label>
+          <p id="resumen" class="summary" aria-live="polite"></p>
+        </div>
+
+        <section id="productos" class="grid" aria-label="Productos"></section>
+        <p id="sinResultados" class="empty" hidden></p>
+      </main>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script type="module" src="./home.ts"></script>
+  </body>
+<!-- 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -11,7 +59,7 @@
     <h1>Hola desde la vista de admin</h1>
     <button id="logoutButton">Logout</button>
     <script type="module" src="./home.ts"></script>
-</body>
+</body> -->
 
 
-</html>
+</html> 

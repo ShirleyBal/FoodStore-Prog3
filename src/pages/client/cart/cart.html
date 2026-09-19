@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Food Store | Carrito</title>
+
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="./cart.css">
+  </head>
+
+  <body>
+    <header class="topbar">
+      <a class="brand" href="../home/home.html">
+        Food Store
+      </a>
+
+      <nav class="topnav" aria-label="Principal">
+        <a href="../home/home.html">
+          Catálogo
+        </a>
+
+        <a href="./cart.html" aria-current="page">
+          Carrito
+          <span
+            id="cartCount"
+            class="badge"
+            title="Unidades en el carrito"
+          >
+            0
+          </span>
+        </a>
+      </nav>
+    </header>
+
+    <main class="cart-page">
+      <h1>Tu carrito</h1>
+
+      <p id="carritoVacio" class="empty" hidden>
+        <strong>Tu carrito está vacío</strong>
+        Agregá productos desde
+        <a href="../home/home.html">el catálogo</a>.
+      </p>
+
+      <section id="carritoContenido" hidden>
+
+        <ul id="carritoLista" class="cart-list"></ul>
+
+        <div class="cart-summary">
+
+          <div class="cart-actions">
+
+            <button
+              type="button"
+              id="vaciar"
+              class="btn btn-ghost"
+            >
+              Vaciar carrito
+            </button>
+
+            <button
+              type="button"
+              id="pagar"
+              class="btn"
+            >
+              Pagar
+            </button>
+
+          </div>
+
+          <p class="cart-total" aria-live="polite">
+            <span>Total</span>
+            <strong id="total">$0</strong>
+          </p>
+
+        </div>
+
+      </section>
+    </main>
+
+    <script type="module" src="./cart.ts"></script>
+  </body>
+</html>

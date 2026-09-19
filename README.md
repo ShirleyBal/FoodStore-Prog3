@@ -7,6 +7,8 @@ Este es un proyecto de demostración creado con fines educativos para ilustrar u
 El objetivo es mostrar cómo se puede restringir el acceso a ciertas páginas según el rol de un usuario (por ejemplo, `ADMIN` o `CLIENT`).
 
 ---
+# Video link: https://youtu.be/Y-jySXB7RMY
+---
 
 ## ⚠️ ¡Importante! Nivel de Seguridad
 
